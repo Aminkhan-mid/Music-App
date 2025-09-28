@@ -4,3 +4,5 @@ fetch(`https://itunes.apple.com/search?term=arctic+monkeys+i+wanna+be+yours&medi
         console.log(data.results[0])
     })
 
+
+

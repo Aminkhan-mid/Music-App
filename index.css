@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeae7;
+    font-family: sans-serif;
+}
+.header-container{
+    display: flex;
+}
+.header-greet{
+    margin: 1em;
+}
+.profile-img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+.profile-greet{
+    font-weight: 500;
+}
+
+.profile-svg{
+    width: 100px;
+    margin-top: -1.9em;
+}
+button{
+    background-color: #e6dad0;
+    width: 2em;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0.3em;
+}
+
+.body-container{
+    background-color: #d95d39;
+    height: 100vh;
+    border-top-right-radius: 2.5em;
+    border-top-left-radius: 2.5em;
+}
