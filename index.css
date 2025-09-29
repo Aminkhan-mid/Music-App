@@ -28,7 +28,7 @@ body{
     width: 100px;
     margin-top: -1.9em;
 }
-button{
+.emoji-btn{
     background-color: #e6dad0;
     width: 2em;
     height: 4rem;
@@ -36,7 +36,39 @@ button{
     border-radius: 50%;
     margin: 0.3em;
 }
-
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.2em 0.2em 3px black;
+    background-color: #e6dad0;
+    border-radius: 0.5em;
+    margin: -2.5em 0.625em 1.25em 0.625em;
+}
+.search-inp{
+    border: none;
+    border-radius: 0.4em;
+    background-color: transparent;
+    width: 90%;
+    padding: 1em;
+    font-weight: bold;
+}
+.search-inp:focus{
+    outline: none;
+}
+.input-container button{
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #d95d39;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.input-container button i{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .body-container{
     background-color: #d95d39;
     height: 100vh;
@@ -64,3 +96,4 @@ button{
     font-size: 1.5rem;
     text-shadow: 0px 0px 5px beige;
 }
+
