@@ -1,7 +1,7 @@
 
 async function getSongProfile() {
     try{
-        const res = await fetch(`https://itunes.apple.com/search?term=arctic+monkeys+i+wanna+be+yours&media=music&entity=song&limit=1`)
+        const res = await fetch(`https://itunes.apple.com/search?term=arctic+monkeys&limit=10`)
         if(!res.ok){
             throw new Error("Something went wrong!")
         }
@@ -20,7 +20,7 @@ async function getSongProfile() {
 
             
 
-            document.getElementById("display-songs").innerHTML = `
+            document.getElementById("display-songs").innerHTML += `
              <section class="songs-container">
                 <div class="song-details">
                     <p class="artist-name">${artist}</p>

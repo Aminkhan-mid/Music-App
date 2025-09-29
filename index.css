@@ -75,6 +75,7 @@ body{
     border-top-right-radius: 2.5em;
     border-top-left-radius: 2.5em;
     padding-top:1.5em;
+    overflow:scroll;
 }
 .songs-container{
     width: 85%;
@@ -85,7 +86,7 @@ body{
     position: relative;
     border-radius: 1em;
     height: fit-content;
-    margin: 0 auto;
+    margin: 1em auto;
     box-shadow: 4px 4px gray;
 }
 .artist-name{
