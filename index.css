@@ -42,7 +42,7 @@ body{
     box-shadow: 0.2em 0.2em 3px black;
     background-color: #e6dad0;
     border-radius: 0.5em;
-    margin: -2.5em 0.625em 1.25em 0.625em;
+    margin: -2em 0.625em 1.25em 0.625em;
 }
 .search-inp{
     border: none;
