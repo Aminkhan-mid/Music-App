@@ -12,6 +12,29 @@ async function getSongProfile() {
             let songName = songs.trackName
             let songPreview = songs.previewUrl
             let artWork = songs.artworkUrl100
+
+            let releaseDate = songs.releaseDate
+            const date = new Date(releaseDate)
+            const options = {year: "numeric", month:"long", day:"numeric"}
+            const formated = date.toLocaleDateString("en-US", options)
+
+            
+
+            document.getElementById("display-songs").innerHTML = `
+             <section class="songs-container">
+                <div class="song-details">
+                    <p class="artist-name">${artist}</p>
+                    <p class="song-name">${songName}</p>
+                    
+                    <p class="release-date">${formated}</p>
+                    
+                    <button class="song-previewBtn">
+                    <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+                <img src="${artWork}" alt="music thumbnail">
+            </section>
+            `
         }
     }    
     catch(err) {
