@@ -83,7 +83,7 @@ searchBtn.addEventListener("click", () => {
 
 async function getSongProfile() {
     try{
-        const res = await fetch(`https://itunes.apple.com/search?term=arctic+monkeys&entity=musicVideo`)
+        const res = await fetch(`https://itunes.apple.com/search?term=arctic+monkeys&entity=musicVideo&limit=50`)
         if(!res.ok){
             throw new Error("Something went wrong!")
         }
